@@ -16,6 +16,12 @@ if (ndims(p) ~= 2) | (min(size(p)) > 1) | ~isreal(p) | ~isnumeric(p)
 end
  % Global variable surviving all recursions of function 'makecode'
  global CODE
+
+ 
+ 
+ 
+ 
+ 
  CODE = call(length(p), 1);     % Init global cell array
  
  if length(p) > 1               % When more than one symbol ...
